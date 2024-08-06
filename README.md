@@ -24,6 +24,16 @@ $ npm i -g @nestjs/cli
 $ docker compose up -d
 ```
 
+## Clone the **.env.template** file and rename to **.env** file
+
+## Fill the variables at **.env** file
+
+## Run seed
+
+```bash
+$ localhost:3000/api/v2/seed
+```
+
 ## Running the app
 
 ```bash
@@ -48,12 +58,6 @@ localhost:3000/api/v2/seed
 ```bash
 # unit tests
 $ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
 
 ## Tech Stack
