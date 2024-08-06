@@ -34,7 +34,7 @@ $ docker compose up -d
 $ localhost:3000/api/v2/seed
 ```
 
-## Running the app
+## Running the app - Dev
 
 ```bash
 # development
@@ -45,6 +45,20 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+```
+
+## Running the app - Prod Build
+
+1. Create .env.prod file
+2. Fill the variables within the prod file
+3. Build/Run new docker image:
+
+```bash
+# Build
+docker compose -f docker-compose.prod.yaml --env-file.env.prod up --build
+
+# Run
+docker compose -f docker-compose.prod.yaml --env-file.env.prod up
 ```
 
 ## Seed
