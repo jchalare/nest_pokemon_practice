@@ -1,5 +1,8 @@
-/* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
+import { AxiosAdapter } from './adapters/axios.adapter';
 
-@Module({})
+@Module({
+  providers: [AxiosAdapter],
+  exports: [AxiosAdapter],
+})
 export class CommonModule {}
